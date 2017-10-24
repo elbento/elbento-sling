@@ -1,0 +1,48 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'org.figurate:gradle-bundle-plugin:1.0.1-SNAPSHOT'
+    }
+}
+
+subprojects {
+    apply plugin: 'bundle'
+
+    repositories {
+        mavenCentral()
+    }
+
+    task mkClassesDir doLast {
+        new File("$buildDir/classes/main").mkdirs()
+        new File("$buildDir/osgi-classes").mkdirs()
+    }
+    tasks.processResources.dependsOn mkClassesDir
+
+    processResources {
+        filter ReplaceTokens, tokens: [
+            "projectName": project.property('projectName'),
+            "projectId": project.property('projectId'),
+            "projectUrl": project.property('projectUrl'),
+            "projectDomain": (project.property('projectUrl') =~ /(?:https?:\/\/)(.*)/)[0][1],
+            "organization": project.property('organization'),
+            "gaTrackingId": project.property('gaTrackingId'),
+            "year": Calendar.instance.get(Calendar.YEAR) as String
+        ]
+    }
+
+    bundleInstall {
+        uri = "$sling_url/system/console/bundles"
+        username = sling_username
+        password = sling_password
+    }
+}
