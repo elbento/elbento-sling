@@ -4,10 +4,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 module.exports = {
-  entry: './src/main/resources/SLING-INF/content/js/elbentocom.js',
+  entry: './src/app/js/elbento.js',
   output: {
-    filename: 'resources/main/SLING-INF/content/js/elbentocom.bundle.js',
-    path: path.resolve(__dirname, 'build')
+    filename: 'js/elbento.bundle.js',
+    path: path.resolve(__dirname, 'src/app')
   },
   module: {
     rules: [
@@ -24,9 +24,9 @@ module.exports = {
 		  {
             loader: 'file-loader',
             options: {
-            	'outputPath': 'resources/main/SLING-INF/content/images/',
+            	'outputPath': 'images/',
             	'useRelativePath': true,
-            	publicPath: '/apps/elbentocom/images/'
+            	publicPath: '/apps/elbento/images/'
 			}
           }
 	  	]
@@ -37,9 +37,9 @@ module.exports = {
 		  {
             loader: 'file-loader',
             options: {
-            	'outputPath': 'resources/main/SLING-INF/content/fonts/',
+            	'outputPath': 'fonts/',
             	'useRelativePath': true,
-				publicPath: '/apps/elbentocom/fonts/'
+				publicPath: '/apps/elbento/fonts/'
 			}
           }
         ]
@@ -60,13 +60,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("resources/main/SLING-INF/content/css/elbentocom.bundle.css"),
+    new ExtractTextPlugin("css/elbento.bundle.css"),
     new GoogleFontsPlugin({
 		fonts: [
 			{ family: "Roboto" }
 		],
-		path: 'resources/main/SLING-INF/content/fonts/',
-		filename: 'resources/main/SLING-INF/content/css/fonts.css'
+		path: 'fonts/',
+		filename: 'css/fonts.css'
 	})
   ]
 };

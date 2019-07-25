@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head data-th-replace="/apps/elbento/page/fragments/default.html::header">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/elbento.bundle.css">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/fonts.css">
+    <script src="/apps/elbento/js/elbento.bundle.js"></script>
+</head>
+<body>
+<div data-th-replace="/apps/elbento/page/fragments/default.html::title" class="ui main text container"></div>
+<div data-th-replace="/apps/elbento/page/fragments/default.html::menu" class="ui borderless main menu"></div>
+
+<div class="ui text container">
+
+    <div class="column" data-th-fragment="full">
+        <span data-th-each="topic : ${resource.valueMap['topics']}">
+            <button data-th-replace="/apps/elbento/page/fragments/topic.html::button" class="ui red basic mini button">Topic 1</button>
+        </span>
+        <div data-th-each="par : ${resource.valueMap['pars']}">
+            <p data-th-text="${par}">Vivamus non elit ac dui viverra viverra. Praesent ut accumsan elit, porttitor vulputate ante. Suspendisse fringilla neque justo. Sed vitae purus ac orci consectetur ullamcorper. Maecenas consectetur ac magna ut pellentesque. Fusce mattis risus vitae dolor dictum, quis suscipit libero iaculis. Nunc sapien turpis, ultricies non nisl vel, placerat sagittis mauris. Integer sodales sodales dignissim. Sed id mauris elementum, euismod ex sit amet, malesuada turpis. Vivamus facilisis sed urna a cursus. Proin vitae nisi leo. Curabitur eu libero pulvinar, varius augue nec, iaculis dolor. Etiam faucibus ipsum sit amet porttitor efficitur. Sed consectetur lorem ut eros pulvinar efficitur.</p>
+        </div>
+    </div>
+</div>
+
+<div data-th-replace="/apps/elbento/page/fragments/default.html::footer" class="ui inverted vertical footer segment"></div>
+</body>
+</html>

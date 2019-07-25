@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head data-th-replace="/apps/elbento/page/fragments/default.html::header">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/elbento.bundle.css">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/fonts.css">
+    <script src="/apps/elbento/js/elbento.bundle.js"></script>
+</head>
+<body>
+<div data-th-replace="/apps/elbento/page/fragments/default.html::title"></div>
+<div data-th-replace="/apps/elbento/page/fragments/default.html::menu"></div>
+
+<div class="ui text container">
+    <span data-th-each="topic : ${resource.getChild('list').getChildren()}">
+        <a data-th-href="|${topic.path}.html|" data-th-text="${topic.valueMap['title']}"
+           data-th-classappend="${topic.valueMap['colour']}"
+           href="/elbento/topics/topic-1.html" class="ui basic button">Topic 1</a>
+    </span>
+</div>
+
+<span data-th-replace="/apps/elbento/page/fragments/default.html::footer"/>
+</body>
+</html>

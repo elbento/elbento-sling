@@ -1,0 +1,6 @@
+{
+  "title":"elbento",
+  "description":"Thoughts and opinions",
+  "sling:resourceType":"elbento/page/index",
+  "jcr:primaryType":"nt:unstructured"
+}

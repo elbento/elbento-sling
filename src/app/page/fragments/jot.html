@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/elbento.bundle.css">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/fonts.css">
+    <script src="/apps/elbento/js/elbento.bundle.js"></script>
+</head>
+<body>
+<div class="ui text container">
+    <div class="ui grid">
+        <div class="column">
+            <div data-th-fragment="summary">
+                <h3 data-th-text="${jot.valueMap['title']}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <span data-th-each="topic : ${jot.valueMap['topics']}">
+                    <button data-th-replace="/apps/elbento/page/fragments/topic.html::button" class="ui red basic mini button">Topic 1</button>
+                </span>
+                <p data-th-text="${jot.valueMap['pars'][0]}">Vivamus non elit ac dui viverra viverra. Praesent ut accumsan elit, porttitor vulputate ante. Suspendisse fringilla neque justo. Sed vitae purus ac orci consectetur ullamcorper. Maecenas consectetur ac magna ut pellentesque. Fusce mattis risus vitae dolor dictum, quis suscipit libero iaculis. Nunc sapien turpis, ultricies non nisl vel, placerat sagittis mauris. Integer sodales sodales dignissim. Sed id mauris elementum, euismod ex sit amet, malesuada turpis. Vivamus facilisis sed urna a cursus. Proin vitae nisi leo. Curabitur eu libero pulvinar, varius augue nec, iaculis dolor. Etiam faucibus ipsum sit amet porttitor efficitur. Sed consectetur lorem ut eros pulvinar efficitur.</p>
+                <a data-th-href="|${jot.path}.html|" href="../jot/html.html">More..</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

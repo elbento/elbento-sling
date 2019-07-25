@@ -1,0 +1,9 @@
+version: "3"
+services:
+  whistlepost:
+    image: "micronode/whistlepost:1.1.5-develop-SNAPSHOT"
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./src/app:/wp/apps/elbento:ro
+      - ./src/content:/wp/content/elbento:ro

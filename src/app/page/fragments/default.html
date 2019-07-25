@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head data-th-fragment="header">
+    <title data-th-text="${resource.valueMap['title']}">elbento</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/elbento.bundle.css">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/fonts.css">
+    <script src="/apps/elbento/js/elbento.bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.main.menu').visibility({type: 'fixed'});
+        });
+    </script>
+    <style type="text/css">
+        .main.menu {
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            transition: box-shadow 0.5s ease, padding 0.5s ease;
+        }
+
+        .main.menu.fixed {
+            border: 1px solid #DDD;
+            box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+        }
+
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 2em 0em;
+        }
+    </style>
+</head>
+
+<body>
+<div class="ui main text container" data-th-fragment="title">
+    <h1 class="ui header" data-th-text="${resource.valueMap['title']}">[Title Placeholder]</h1>
+    <p data-th-text="${resource.valueMap['description']}">[Description Placeholder]</p>
+</div>
+
+<div class="ui borderless main menu" data-th-fragment="menu">
+    <div class="ui text container">
+<!--        <a href="/elbento/jots/current.html" class="item">Jots</a>-->
+<!--        <a href="/elbento/topics.html" class="item">Topics</a>-->
+<!--        <a href="/elbento/references.html" class="item">References</a>-->
+<!--        <div class="ui buttons">-->
+            <a href="/elbento/jots/current.html" class="ui button">Jots</a>
+            <a href="/elbento/topics.html" class="ui button">Topics</a>
+            <div class="ui dropdown icon button">
+                <div class="text">Archives</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">2018</div>
+<!--                    <div class="item">-->
+<!--                        <a href="/elbento/jots/archive/2018.html">2018</a>-->
+<!--                    </div>-->
+                </div>
+            </div>
+            <a href="/elbento/references.html" class="ui button">References</a>
+<!--        </div>-->
+    </div>
+</div>
+
+<div class="ui inverted vertical footer segment" data-th-fragment="footer">
+    <div class="ui center aligned container">
+        <footer>
+            <p class="ui center aligned footer">
+                Created with <a href="http://whistlepost.org" target="_blank">Whistlepost</a> | &copy;
+                <span data-th-text="${resolver.getResource('/content/elbento/footer').valueMap['copyright']}">[Copyright Placeholder]</span>
+            </p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

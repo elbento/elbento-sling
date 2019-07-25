@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/elbento.bundle.css">
+    <link rel="stylesheet" type="text/css" href="/apps/elbento/css/fonts.css">
+    <script src="/apps/elbento/js/elbento.bundle.js"></script>
+</head>
+<body>
+<div class="ui text container">
+    <div class="ui grid">
+        <div class="column" data-th-fragment="summary">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a data-th-href="|/elbento/topics/list/${topic}.html|" data-th-text="${resolver.getResource('/content/elbento/topics/list/' + topic).valueMap['title']}"
+               data-th-fragment="button" data-th-classappend="${resolver.getResource('/content/elbento/topics/list/' + topic).valueMap['colour']}"
+               href="/elbento/topics/topic-1.html" class="ui basic mini button">Topic 1</a>
+            <div>
+                <p>Vivamus non elit ac dui viverra viverra. Praesent ut accumsan elit, porttitor vulputate ante. Suspendisse fringilla neque justo. Sed vitae purus ac orci consectetur ullamcorper. Maecenas consectetur ac magna ut pellentesque. Fusce mattis risus vitae dolor dictum, quis suscipit libero iaculis. Nunc sapien turpis, ultricies non nisl vel, placerat sagittis mauris. Integer sodales sodales dignissim. Sed id mauris elementum, euismod ex sit amet, malesuada turpis. Vivamus facilisis sed urna a cursus. Proin vitae nisi leo. Curabitur eu libero pulvinar, varius augue nec, iaculis dolor. Etiam faucibus ipsum sit amet porttitor efficitur. Sed consectetur lorem ut eros pulvinar efficitur.</p>
+            </div>
+            <a href="../jot/html.html">More..</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
