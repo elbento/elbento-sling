@@ -4,10 +4,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 module.exports = {
-  entry: './src/app/js/elbento.js',
+  entry: './assets/js/elbento.js',
   output: {
     filename: 'js/elbento.bundle.js',
-    path: path.resolve(__dirname, 'src/app')
+    path: path.resolve(__dirname, 'assets')
   },
   module: {
     rules: [
@@ -26,7 +26,7 @@ module.exports = {
             options: {
             	'outputPath': 'images/',
             	'useRelativePath': true,
-            	publicPath: '/apps/elbento/images/'
+            	publicPath: '/assets/elbento/images/'
 			}
           }
 	  	]
@@ -39,7 +39,7 @@ module.exports = {
             options: {
             	'outputPath': 'fonts/',
             	'useRelativePath': true,
-				publicPath: '/apps/elbento/fonts/'
+				publicPath: '/assets/elbento/fonts/'
 			}
           }
         ]

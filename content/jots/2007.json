@@ -1,0 +1,50 @@
+{
+  "sling:resourceType":"elbento/page/jot-list",
+  "jcr:primaryType":"nt:unstructured",
+  "list": {
+    "im-just-doing-my-job": {
+      "sling:resourceType":"elbento/page/jot",
+      "title": "I'm just doing my job",
+      "date": "2007-08-04",
+      "pars": [
+        "Did you know there is a position at an abattoirs whose job it is to fire a bolt into the side of a cow's head? Cow after cow on conveyor is locked into place ready for the executioner to pull the trigger. Would you sleep at night if this was your job? Some wouldn't, but many would - after all they are just doing their job.",
+        "What about police, soldiers and, dare I say it, ticket inspectors? Are they all 'just doing their job'? Many will use that excuse when confronted with a morally challenging and/or confrontational situation. But this is not a valid excuse for a rational, thinking human being. We are not machines programmed to perform tasks, nor can we suggest that we are in no way accountable for any one of our actions. We are complicit in every single thing we do, be it through choice or that which is dictated to us.",
+        "So how far are we from a society such as those portrayed in movies such a V for Vendetta, or Children of Men? If governments - or, more commonly these days, private companies to which governments are outsourcing responsibilities - continue to dictate morally ambiguous job descriptions, is this not leading to a world that disregards any moral responsibility?",
+        "Unfortunately our future society may in fact be even worse than those alluded to by the movies. Our future will not be one where the detriment of society can be traced back to a single individual or group of individuals. Rather we will find that most of the bereavement of our moral responsibilities is the result of some seemingly innocuous decision made in the bowels of a government or organisation. A decision made to streamline a process, or to improve efficiency. Moreover, these decisions will be made by morally just individuals like you or I, who didn't have the foresight to understand the repercussions of such decisions. Such decisions will be made for the benefit of the organisation or, more ironically, society as a whole. And those that make these decisions cannot be held accountable as, after all, they were just doing their job."
+      ],
+      "topics": ["society"],
+      "published": true
+    },
+    "fine-a-thon": {
+      "sling:resourceType":"elbento/page/jot",
+      "title": "Fine-a-thon",
+      "date": "2007-07-14",
+      "pars": [
+        "Well I was hoping I wouldn't be posting again quite so soon, but I guess I shouldn't be surprised..",
+        "Today I had to run down to the travel agent to pick up something for my sister. As per usual I'm not running early, so I don't have a lot of time to get down there. Parking is a nightmare on Saturday morning, so I have to park in a ticketed area (parking on the street is timed, but free). The ticketed area is ten (10) metres from the travel agent, so I decide to risk not buying a ticket and run in to get what I need. Yes I know, alarm bells should have been ringing, considering my last encounter, but in the interests of social experimentation I decided to try my luck.",
+        "So I get into the travel agent and the guy is dealing with another customer. I don't listen too intently, but I suspect the deal has been done and they are just haggling about how far they can push the deadlines for paying deposits and the full amount for their holiday. So I wait - not all that long, probably ten (10) minutes - and promptly receive what I came for. I rush back out to the car, look on the windscreen, and sure enough I see a parking ticket. This time it is $55, which, compared to the last fine, seems reasonable. Or maybe I am still numbed by the last fine and can't really be bothered even worrying about it. 'Yeah whatever, add it to the list'.",
+        "So I'm thinking I might need some kind of corporate sponsorship for my day to day activities. Perhaps I could offer some advertising space on the back of my head: 'This life brought to you by lifeminders.com - we'll keep you out of trouble!'."
+      ],
+      "topics": ["society"],
+      "published": true
+    },
+    "i-will-not-be-assimilated": {
+      "sling:resourceType":"elbento/page/jot",
+      "title": "I will not be assimilated",
+      "date": "2007-07-12",
+      "pars": [
+        "Case study of a broken system 1:",
+        "Every week I use Melbourne's public transport system to get to and from work. Depending on the location of the work, I will typically use the train or tram network. Public transport in Melbourne is not free, and the governing bodies spend millions of dollars every year making sure you are aware of that fact. Despite this, there have always been, and I suspect always will be, mechanisms to avoid paying for use of this system.",
+        "As a financially-deprived university student I may have been known to take advantage of these mechanisms from time to time, typically as a means to afford some kind of social life at least on par with the dead. However, against all odds I managed to serve my sentence of poverty and emerged the other side into a well-paying career. With my new-found wealth I no longer had a need to avoid paying for public transport, and as such have made every reasonable effort to do the right thing. Unfortunately this is not enough.",
+        "This morning I realised my weekly ticket had expired. I had no coins to buy a ticket on the tram (they ONLY accept coins, and if you don't have any, tough luck!), so I decided I would catch the tram to work anyway and buy a ticket when I got there. As luck would have it, inspectors boarded my tram and started checking tickets. I explained my situation and showed them my weekly ticket that had only just expired. Naturally he pulls out his pad. 'Do you know what I am doing?'. 'Are you going to fine me?'. 'No, I am just reporting the incident'. You can just imagine the think tanks that come up with the scripts these guys spout: 'What words can we use that will defuse an inflammatory situation?'. I suspect they are the same guys that governments use to come up with terms like 'Unlawful Combatants', or 'Collateral Damage'. Anyone with half a brain will recognise such doublespeak as an insult to their intelligence.",
+        "'You know it's my job to make sure people have a valid ticket'. Sure. Is it not also your job to use your brain to assess the situation and decide if someone actually deserves to be fined? The police are capable of giving warnings all the time, how is this any different?",
+        "'Do you understand what just happened?'. 'Are you going to fine me?'. 'I will report the incident. If you get a letter in the mail from the Department of Infrastructure then yes you will be fined $158'. Wow, thanks for being so honest with me.",
+        "So I guess this is the price you pay for not paying attention to detail. I don't have a budget. I don't know exactly how much I am paid every week, or how much interest I earn from my investments. I don't know how much I have in my super. I haven't done tax for a couple of years. I don't catch the same tram/train to/from work. I don't sit in the same seat when I do. I don't time my journeys, so I am sometimes late. I sometimes run out of milk. Finding insurance of any kind is a mind-numbing chore to me. I don't abuse people that don't stand on the ~~right~~ left on escalators.",
+        "And of course, I don't always keep track of dates..",
+        "So I guess this system is just not meant for me. I relish the day that I no longer depend on public transport. It is a sad fact, especially when we should all be considering it more and more. Ultimately it seems, to lead an existence focused on the meaningful things, as opposed to an anally retentive focus on the meaningless, is a privilege that will cost extra."
+      ],
+      "topics": ["society"],
+      "published": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+import aQute.bnd.gradle.Bundle
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'se.transmode.gradle:gradle-docker:1.2'
+    }
+}
+
+plugins {
+    id "com.moowork.node" version "1.3.1"
+    id "biz.aQute.bnd.builder" version "4.2.0"
+}
+
+apply plugin: 'java'
+apply plugin: 'docker'
+
+processResources {
+    filter ReplaceTokens, tokens: [
+            "projectName": projectName,
+            "projectId": projectId,
+            "projectUrl": projectUrl,
+            "projectDomain": (projectUrl =~ /(?:https?:\/\/)(.*)/)[0][1],
+            "organization": organization,
+            "gaTrackingId": gaTrackingId,
+            "disqusShortName": disqusShortName,
+            "currentYear": Calendar.instance.get(Calendar.YEAR) as String
+    ]
+}
+
+jar.enabled = false
+
+node {
+    download = true
+
+    version = '10.16.0'
+    npmVersion = '6.9.0'
+}
+
+task buildWebpack(type: NpmTask) {
+    args = ['run', 'buildWebpack']
+}
+
+task bundleApp(type: Bundle) {
+    archiveBaseName = "$projectId-app"
+    bndfile = 'app.bnd'
+    from('theme/app') { into 'SLING-INF/content' }
+    from('assets') { into 'assets' }
+}
+
+task bundleConfig(type: Bundle) {
+    archiveBaseName = "$projectId-config"
+    bndfile = 'config.bnd'
+    from('config') { into 'SLING-INF/content' }
+}
+
+task bundleContent(type: Bundle) {
+    archiveBaseName = "$projectId-content"
+    bndfile = 'content.bnd'
+    from('content') { into 'SLING-INF/content' }
+}
+
+bundleApp.dependsOn buildWebpack
+buildWebpack.dependsOn yarn
+clean.dependsOn yarn_cache_clean
+
+artifacts {
+    archives bundleApp
+    archives bundleConfig
+    archives bundleContent
+}
+
+docker {
+    baseImage "micronode/whistlepost:${whistlepost_version}"
+    maintainer organization
+}
+
+task buildDocker(type: Docker) {
+    applicationName = project.name
+    tagVersion = 'latest'
+    push 'true' == docker_push
+    apiUsername = docker_apiUsername
+    apiPassword = docker_apiPassword
+    apiEmail = docker_apiEmail
+    configurations.archives.allArtifacts.findAll({it.file.exists()}).each {
+        addFile it.file, "/opt/sling/sling/startup/${bundleStartLevel}/"
+    }
+    addFile 'sling.properties', '/opt/sling/'
+    dependsOn build
+}

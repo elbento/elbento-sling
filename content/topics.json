@@ -56,6 +56,11 @@
       "sling:resourceType":"elbento/page/topic",
       "title": "Wildlife",
       "colour": "yellow"
+    },
+    "society": {
+      "sling:resourceType":"elbento/page/topic",
+      "title": "Society",
+      "colour": "purple"
     }
   }
 }

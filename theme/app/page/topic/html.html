@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div data-th-each="jot : ${resolver.getResource('/content/elbento/jots/archive/2018/list').getChildren()}">
+        <div data-th-each="jot : ${resolver.getResource('/content/elbento/jots/2007/list').getChildren()}">
             <div data-th-if="${resource.name in jot.valueMap['topics']}">
                 <div data-th-replace="/apps/elbento/page/fragments/jot.html::summary">
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>

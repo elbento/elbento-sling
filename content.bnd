@@ -1,0 +1,3 @@
+Sling-Initial-Content: SLING-INF/content;path:=/content/elbento;overwrite:=true
+Bundle-Name: elbento-content
+Bundle-SymbolicName: org.whistlepost.elbento.elbento-content

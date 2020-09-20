@@ -1,0 +1,4 @@
+Sling-Initial-Content: SLING-INF/content;path:=/apps/elbento;overwrite:=true
+Sling-Bundle-Resources: /assets/elbento;path:=/assets
+Bundle-Name: elbento-app
+Bundle-SymbolicName: org.whistlepost.elbento.elbento-app
