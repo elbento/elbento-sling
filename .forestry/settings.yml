@@ -5,11 +5,17 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/topics
+  label: Topics
+  create: all
+  match: "**/*"
+  new_doc_ext: ".json"
+- type: directory
   path: content/jots
   label: Jots
   create: all
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
