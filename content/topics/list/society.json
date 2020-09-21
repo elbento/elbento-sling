@@ -1,5 +1,5 @@
 {
-  "sling:resourceType":"elbento/page/topic",
+  "sling:resourceType": "elbento/page/topic",
   "title": "Society",
   "colour": "purple"
 }
