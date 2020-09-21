@@ -1,5 +1,5 @@
 {
-  "sling:resourceType":"elbento/page/jot",
+  "sling:resourceType": "elbento/page/jot",
   "title": "I'm just doing my job",
   "date": "2007-08-04",
   "pars": [
@@ -8,6 +8,8 @@
     "So how far are we from a society such as those portrayed in movies such a V for Vendetta, or Children of Men? If governments - or, more commonly these days, private companies to which governments are outsourcing responsibilities - continue to dictate morally ambiguous job descriptions, is this not leading to a world that disregards any moral responsibility?",
     "Unfortunately our future society may in fact be even worse than those alluded to by the movies. Our future will not be one where the detriment of society can be traced back to a single individual or group of individuals. Rather we will find that most of the bereavement of our moral responsibilities is the result of some seemingly innocuous decision made in the bowels of a government or organisation. A decision made to streamline a process, or to improve efficiency. Moreover, these decisions will be made by morally just individuals like you or I, who didn't have the foresight to understand the repercussions of such decisions. Such decisions will be made for the benefit of the organisation or, more ironically, society as a whole. And those that make these decisions cannot be held accountable as, after all, they were just doing their job."
   ],
-  "topics": ["society"],
+  "topics": [
+    "society"
+  ],
   "published": true
 }
