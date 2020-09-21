@@ -1,0 +1,13 @@
+---
+label: Topic
+hide_body: true
+fields:
+- type: text
+  name: sling:resourceType
+  label: sling:resourceType
+- type: text
+  name: title
+  label: title
+- type: text
+  name: colour
+  label: colour
