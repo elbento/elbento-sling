@@ -8,6 +8,9 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: colour
+- name: colour
+  type: color
   label: colour
+  config:
+    required: false
+    color_format: Hex
