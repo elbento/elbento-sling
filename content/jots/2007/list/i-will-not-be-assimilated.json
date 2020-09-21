@@ -1,5 +1,5 @@
 {
-  "sling:resourceType":"elbento/page/jot",
+  "sling:resourceType": "elbento/page/jot",
   "title": "I will not be assimilated",
   "date": "2007-07-12",
   "pars": [
@@ -13,6 +13,8 @@
     "And of course, I don't always keep track of dates..",
     "So I guess this system is just not meant for me. I relish the day that I no longer depend on public transport. It is a sad fact, especially when we should all be considering it more and more. Ultimately it seems, to lead an existence focused on the meaningful things, as opposed to an anally retentive focus on the meaningless, is a privilege that will cost extra."
   ],
-  "topics": ["society"],
+  "topics": [
+    "society"
+  ],
   "published": true
 }

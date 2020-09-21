@@ -21,4 +21,5 @@ fields:
   name: published
   label: published
 pages:
+- content/jots/2007/list/i-will-not-be-assimilated.json
 - content/jots/2018/list/lorem-ipsum-2.json
