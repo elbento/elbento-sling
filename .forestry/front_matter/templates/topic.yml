@@ -15,5 +15,6 @@ fields:
     required: false
     color_format: Hex
 pages:
+- content/topics/list/technology.json
 - content/topics/list/tv.json
 - content/topics/list/wildlife.json
