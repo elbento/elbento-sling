@@ -14,7 +14,7 @@ sections:
   path: content/jots
   label: Jots
   create: all
-  match: "**/*"
+  match: "**/list/*"
   new_doc_ext: json
 upload_dir: uploads
 public_path: "/uploads"
