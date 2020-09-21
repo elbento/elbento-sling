@@ -14,3 +14,5 @@ fields:
   config:
     required: false
     color_format: Hex
+pages:
+- content/topics/list/wildlife.json
