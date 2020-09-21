@@ -1,0 +1,5 @@
+{
+  "sling:resourceType":"elbento/page/topic",
+  "title": "Music",
+  "colour": "red"
+}
