@@ -20,3 +20,5 @@ fields:
 - type: boolean
   name: published
   label: published
+pages:
+- content/jots/2018/list/lorem-ipsum-2.json
